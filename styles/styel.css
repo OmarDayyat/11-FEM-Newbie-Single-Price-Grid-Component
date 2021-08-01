@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/*=============
+  General
+=============*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background-color: #e5eef6;
+  min-height: 100vh;
+  padding: 30px 150px 10px 150px;
+}
+
+h1 {
+  color: #2ab2af;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #c0df34;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #c0df34;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #98a6bd;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/*===============
+  Main container
+=================*/
+.main-container {
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  padding: 50px;
+}
+
+/*==================
+  Seconday container
+====================*/
+.secondary-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e5eff5;
+}
+
+.secondary-container h2 {
+  position: relative;
+  color: #e5eff5;
+  font-size: 2.5rem;
+}
+
+.secondary-container h2 span {
+  position: absolute;
+  opacity: 0.4;
+  font-size: 1.3rem;
+  top: 20%;
+  margin-left: 20px;
+}
+
+.secondary-container h3 {
+  color: #e5eff5;
+}
+
+.secondary-container p {
+  color: #e5eff5;
+  margin-bottom: 50px;
+  opacity: 0.7;
+}
+
+.secondary-container .button {
+  width: 100%;
+  background-color: #c0df34;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.secondary-container a {
+  text-decoration: none;
+  color: #e5eff5;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+/*=========
+  Cards
+===========*/
+.card-left {
+  background-color: #2ab2af;
+  width: 50%;
+  border-radius: 0 0 0 10px;
+  padding: 50px 50px 0 50px;
+}
+
+.card-right {
+  background-color: #4bbebc;
+  width: 50%;
+  border-radius: 0 0 10px 0;
+  padding: 50px 120px 0 50px;
+}
+
+.card-right p {
+  opacity: 0.6;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styel.css.map */

@@ -49,6 +49,11 @@ p{
   Main container
 =================*/
 
+.container{
+  box-shadow: 0px 10px 20px hsla(0, 0%, 0%,0.2);
+  border-radius: 10px;
+}
+
 .main-container{
   border-radius: 10px 10px 0 0;
   background-color: white;
@@ -81,24 +86,39 @@ p{
 
   p{
     color: $Light-Gray;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     opacity: 0.7;
   }
 
-  .button{
-    width: 100%;
-    background-color: $Bright-Yellow;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0px 5px 20px hsla(0, 0%, 0%,0.2);
-    text-align: center;
-  }
+  // .button{
+  //   width: 100%;
+  //   background-color: $Bright-Yellow;
+  //   border-radius: 5px;
+  //   padding: 15px;
+  //   box-shadow: 0px 5px 20px hsla(0, 0%, 0%,0.2);
+  //   text-align: center;
+  // }
 
-  a{
-    text-decoration: none;
+  // a{
+  //   text-decoration: none;
+  //   color: $Light-Gray;
+  //   font-family: $font;
+  //   font-weight: 700;
+  //   background-color: red;
+  // }
+
+  button{
+    background-color: $Bright-Yellow;
+    box-shadow: 0px 5px 20px hsla(0, 0%, 0%,0.2);
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    height: 50px;
     color: $Light-Gray;
     font-family: $font;
     font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
 
@@ -110,8 +130,7 @@ p{
   background-color: $Cyan;
   width: 50%;
   border-radius: 0 0 0 10px;
-  padding: 50px 50px 0 50px;
-  
+  padding: 50px 50px 0 50px;  
 }
 
 .card-right{
@@ -124,6 +143,10 @@ p{
   }
 }
 
+/*============
+  Attribution
+==============*/
+
 .attribution {
    font-size: 11px;
    text-align: center;
@@ -131,4 +154,103 @@ p{
    a {
       color: hsl(228, 45%, 44%); 
   }
+}
+
+/*============================================================
+                             Media
+==============================================================*/
+
+@media only screen and (max-width:1024px){
+  
+  html,body{
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  h1{
+    color: $Cyan;
+    font-family: $font;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  
+  h2{
+    color: $Bright-Yellow;
+    font-family: $font;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  h3{
+    color: $Bright-Yellow;
+    font-family: $font;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  p{
+    color: $Grayish-Blue;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /*===============
+    Main container
+  =================*/
+  
+  .container{
+    border-radius: 10px;
+  }
+  
+  .main-container{
+    padding: 30px;
+  }
+  
+  /*==================
+    Seconday container
+  ====================*/
+  
+.secondary-container{
+   flex-direction: column;
+    h2{
+      font-size: 2rem;
+      span{
+        position: absolute;
+        opacity: 0.4;
+        font-size: 1.1rem;
+        top: 20%;
+        margin-left: 20px;
+      }
+    }
+
+    button{
+      margin-bottom: 20px;
+    }
+}
+
+  
+  /*=========
+    Cards
+  ===========*/
+  
+  .card-left{
+    width: 100%;
+    border-radius: 0 0 0 0px;
+    padding: 50px 30px 0 30px;  
+  }
+
+  .card-right{
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 50px 70px 0 30px;
+    p{
+     opacity: 0.6;
+    }
+  }
+
 }
